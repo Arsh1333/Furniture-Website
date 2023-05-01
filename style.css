@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #e1c497;
+    font-family: 'Marcellus', serif;
+}
+
+.logo h1 a{
+    text-decoration: none;
+    color: rgb(241, 212, 172);
+}
+
+nav{
+    background: rgba(213, 157, 97, 0.566);
+    position: fixed;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo{
+    margin-left: 40px;
+    cursor: pointer;
+}
+.container ul{
+    display: flex;
+}
+
+.container ul li{
+    margin: 10px;
+    list-style: none;
+}
+
+.container ul li a{
+    text-decoration: none;
+    color: bisque;
+}
+.container ul li a:hover{
+    color: rgb(110, 80, 57);
+}
+
+.burger{
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: beige;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+
+.hero-h{
+    margin-top: 60px;
+    margin-left: 40px;
+    color: brown;
+}
+
+ .p-hero{
+    font-family: 'Lato', sans-serif;
+    margin: 40px;
+    font-size: larger;
+}
+
+.img-hero{
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(218, 66, 20, 0.566);
+}
+
+.btn-hero{
+    border-radius: 40px;
+    border-color: #e1c497;
+    border: none;
+    margin-left: 40px;
+    width: 100px;
+    height: 50px;
+    background-color: beige;
+    color: rgba(218, 66, 20, 0.566);
+}
+.btn-hero:hover{
+    background-color: rgba(218, 66, 20, 0.566);
+    color: #e1c497;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6)
+}
+hr{
+    margin-top: 15px;
+}
+
+#services{
+    margin-top: 40px;
+}
+
+.serve-h{
+    margin-left: 20px;
+    color: brown;
+}
+
+.card-1{
+    background:  burlywood;
+    color: rgba(218, 66, 20, 0.566);
+    border-radius: 20px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    padding: 15px 20px;
+}
+.card-2{
+    background:  burlywood;
+    color: rgba(218, 66, 20, 0.566);
+    border-radius: 20px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    padding: 15px 20px;
+}
+
+.card-3{
+    background:  burlywood;
+    color: rgba(218, 66, 20, 0.566);
+    border-radius: 20px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    padding: 15px 20px;
+}
+
+.btn-card{
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 40px;
+    height: 40px;
+    width: 85px;
+    background-color: #e1c497;
+    color: rgba(218, 66, 20, 0.566);
+    border:none;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+}
+
+.btn-card:hover{
+     color: #e1c497;
+     background-color: brown;
+}
+
+.p-serve{
+    color: brown;
+    font-family: 'Lato', sans-serif;
+}
+
+.img-card{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+.about-h{
+   color: brown;
+   margin: 20px;
+}
+.p-about{
+    font-family: 'Lato', sans-serif;
+    color: brown;
+    margin: 20px;
+}
+
+.img-about{
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(218, 66, 20, 0.566);
+    width: 360px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container{
+    background-color: rgb(250, 219, 189);
+    color: black;
+}
+
+.f-class{
+    text-align: center;
+}
+
+@media(max-width:600px){
+
+    
+    #hero .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero .desc{
+        margin-top: 20px;
+    }
+    .btn-hero{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .container ul li a{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+
+    #services .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
